@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="../css/form.css">
+    <style>
+    .outerbox{
+    width:100%;
+    height:100vh;
+    background-color:#240a5e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+body{
+    padding: 0;
+    margin: 0;
+    /*background: linear-gradient(135deg, #71b7e6, #9b59b6);*/
+
+}
+.logindiv{
+    width:450px;
+    height:550px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow:20px 20px 20px rgba(0, 0, 0, 0.235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logindiv input{
+    width:300px;
+    padding:15px 20px;
+    margin:15px 0;
+    font-size: 15px;
+    height: 20px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.129);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.logindiv button{
+    width:auto;
+    text-transform: uppercase;
+    padding:10px;
+    position: relative;
+    border-radius: 0;
+    background-color: #f22324;
+    color: white;
+    font-size:20px;
+    border: none;
+}
+h1 {
+    font-size: 2em;
+    color: #f22324;
+    height: 80px;
+}
+</style>
+</head>
+<body>
+<div class="outerbox">
+        <div class="logindiv">
+            <form id="form"  method="POST">
+                 {% csrf_token %}
+                <h1 class="heading">LOGIN</h1>
+                <div>
+                    <input type="text" name="email" placeholder="Email" required><br><br>
+                </div>
+                <div>
+                    <input type="password"  name="password" placeholder="Password" required><br><br>
+                </div>
+                <div>
+                   <button>SIGN IN</button><br><br>
+
+                </div>
+                <div class="sign in link">
+                    Forgot?<a href="#">  Password</a>
+                </div>
+                <div class="sign in link">
+                    Don't have an account?<a href="#"> Sign up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../js/form1.js"></script>
+<script>
+
+
+</script>
+</body>
+</html>

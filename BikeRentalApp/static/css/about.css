@@ -1,0 +1,49 @@
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+}
+header{
+    background-color:#240a5e;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+
+}
+section{
+    padding: 20px;
+
+}
+#about, #team{
+    background-color: #f4f4f4;
+    margin-bottom: 20px;
+
+}
+#team{
+    background-color: #fff;
+}
+
+#about, #team h2{
+    color:#e90c0c;
+}
+#about p{
+    color: #000000;
+}
+#about1, #team h2{
+    color:#e90c0c;
+}
+#about1 p{
+    color: #000000;
+}
+#about2{
+    background-color: #f4f4f4;
+    margin-bottom: 20px;
+}
+#about2, #team h2{
+    color:#e90c0c;
+}
+#about2 p{
+    color: #000000;
+}
